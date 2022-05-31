@@ -3,7 +3,7 @@ A dashboard in Azure that makes you want to spend more time on the portal and pr
 
 <br>
 
-<img src="https://raw.githubusercontent.com/Y4HYA4/my_azure_dashboard/main/Quotation/main—.gif?token=GHSAT0AAAAAABT5ZQ2UVEXMCF2HTLGEGTEEYUWLC6Q"  />
+<img src="https://raw.githubusercontent.com/Y4HYA4/my_azure_dashboard/main/Quotation/main—.gif"  />
 <br>
 <br>
 
