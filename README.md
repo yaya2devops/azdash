@@ -2,7 +2,7 @@
 A dashboard in Azure that makes you want to spend more time on the portal and provides you with such welcome and faster access to your day-to-day tasks is an excellent idea to try!
 
 <br>
-<img src="obj/main—.gif" alt="My Main Dash" width="600" />
+<img src="obj/main—.gif" alt="My Main Dash"  />
 
 <br>
 
