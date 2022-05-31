@@ -5,11 +5,11 @@ A dashboard in Azure that makes you want to spend more time on the portal and pr
 <img src="obj/main—.gif" alt="My Main Dash" width="600" />
 
 <br>
-<br>
 
 
 
-## Start making your own
+
+# Start making your own
 A lot of stuff may be included, from markdown to a video made specifically for you to start Azuring!
 <br>
 <br>
