@@ -20,5 +20,5 @@ When you first log in to the portal, the home page will be displayed by default.
 Please look into this gif to change that to our case.
 
 <br>
-<img src=obj/dashdef.PNG  />
+<img src=obj/dashdef.gif  />
 
