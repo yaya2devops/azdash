@@ -18,6 +18,7 @@ A variety of items may be included, ranging from markdown to a video created spe
 # Set Your Dashboard To Default.
 When you first log in to the portal, the home page will be displayed by default.
 <br>
+
 Please take a look at this gif to adjust that to our situation.
 
 <img src=obj/dashdef.gif  />
