@@ -1,4 +1,4 @@
-# Personnal Dashboard in the Old days!
+# Personal Dashboard in the Old days!
 A dashboard in Azure that inspires you to spend longer on the portal and provides you with such A WELCOME and quick access to your daily chores is great option to consider!
 
 <br>
