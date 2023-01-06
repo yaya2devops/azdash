@@ -4,6 +4,8 @@ A dashboard in Azure that inspires you to spend longer on the portal and provide
 <br>
 <img src="obj/main—.gif" alt="My Main Dash"  />
 
+> Do not miss out the Quote!
+
 <br>
 
  
