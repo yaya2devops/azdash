@@ -48,9 +48,9 @@ const DashPage = () => {
             <div className="bg-[#0078D4]/30 rounded-lg p-6 mb-6 border-l-4 border-[#50e6ff]">
               <h3 className="text-xl font-semibold mb-2 text-[#50e6ff]">Featured Motivational Quote</h3>
               <blockquote className="text-lg italic mb-4">
-                "GET YOUR WORK ON!<br />
-                When you live for a strong purpose, then hard work isn't an option. It's a necessity.<br />
-                Plus, people might not get all they work for in this world, but they must certainly work for all they get."
+                {`"GET YOUR WORK ON!
+                When you live for a strong purpose, then hard work isn't an option. It's a necessity.
+                Plus, people might not get all they work for in this world, but they must certainly work for all they get."`}
               </blockquote>
               <p className="text-sm text-right">- Comes from Yahya Experience, Deep-Down.</p>
             </div>
@@ -123,7 +123,7 @@ const DashPage = () => {
             Date the AZ-900
           </motion.a>
           <p className="mt-6 text-lg text-[#50e6ff]">Get a certification of huge potential.</p>
-          <p className="mt-2 text-sm">Limitless Innovation – Don't miss out on Reshape your growth!</p>
+          <p className="mt-2 text-sm">Limitless Innovation – Don&apos;t miss out on Reshape your growth!</p>
         </div>
       </div>
     </motion.div>
