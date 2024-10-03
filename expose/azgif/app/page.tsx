@@ -3,16 +3,6 @@
 import { useState, useEffect } from 'react'
 import Image from 'next/image'
 import { motion } from 'framer-motion'
-import Head from 'next/head'
-
-const AzureLogoSvg = () => (
-  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" className="w-15 h-15">
-    <path d="M62.6 62.6H0V0h62.6v62.6z" fill="#f25022"/>
-    <path d="M133.3 62.6H70.7V0h62.6v62.6z" fill="#7fba00"/>
-    <path d="M62.6 133.3H0V70.7h62.6v62.6z" fill="#00a4ef"/>
-    <path d="M133.3 133.3H70.7V70.7h62.6v62.6z" fill="#ffb900"/>
-  </svg>
-)
 
 const AzureCloudSvg = () => (
   <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 96 96" className="w-12 h-12 mb-4">
@@ -35,7 +25,7 @@ const AzureShieldSvg = () => (
   </svg>
 )
 
-export default function Component() {
+export default function Home() {
   const [isLoaded, setIsLoaded] = useState(false)
 
   useEffect(() => {
@@ -43,84 +33,80 @@ export default function Component() {
   }, [])
 
   return (
-    <>
-      <Head>
-      <link rel="icon" href="/legend.svg" />
-      <link href="https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;700&display=swap" rel="stylesheet" />
-      </Head>
-      <motion.div 
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1 }}
-        className="min-h-screen bg-gradient-to-br from-[#0078D4] to-[#005a9e] flex flex-col items-center justify-center p-4 sm:p-8"
-      >
-        <div className="flex items-center justify-center mb-12 space-x-4">
-          <h1 className="text-4xl sm:text-5xl font-bold text-white" style={{ fontFamily: "'Segoe UI', sans-serif" }}>
-            <span className="font-extrabold" style={{ textShadow: '0 0 10px rgba(255,255,255,0.5)' }}>Yahya</span> was in
-          </h1>
-          <Image 
-            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" 
-            alt="Microsoft Azure Logo" 
-            width={50} 
-            height={50}
-            className="w-15 h-15 drop-shadow-[0_4px_6px_rgba(255,255,255,0.9)]"
-          />
-        </div>
+    <motion.div 
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 1 }}
+      className="min-h-screen bg-gradient-to-br from-[#0078D4] to-[#005a9e] flex flex-col items-center justify-center p-4 sm:p-8"
+    >
+      <div className="flex items-center justify-center mb-12 space-x-4">
+        <h1 className="text-4xl sm:text-5xl font-bold text-white">
+          <span className="font-extrabold" style={{ textShadow: '0 0 10px rgba(255,255,255,0.5)' }}>Yahya</span> was in
+        </h1>
+        <Image 
+          src="https://upload.wikimedia.org/wikipedia/commons/f/fa/Microsoft_Azure.svg" 
+          alt="Microsoft Azure Logo" 
+          width={50} 
+          height={50}
+          className="w-15 h-15 drop-shadow-[0_4px_6px_rgba(255,255,255,0.9)]"
+        />
+      </div>
 
-        <main className="w-full max-w-5xl">
-          <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-white bg-opacity-10">
+      <main className="w-full max-w-5xl">
+        <div className="relative aspect-video rounded-xl overflow-hidden shadow-2xl bg-white bg-opacity-10">
+          <a href="https://az-dash.yahya-abulhaj.dev/" target="_blank" rel="noopener noreferrer">
             <Image
               src="https://az-dash.yahya-abulhaj.dev/obj/main%E2%80%94.gif"
               alt="Azure-optimized GIF"
-              layout="fill"
-              objectFit="cover"
-              className={`transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'}`}
-              onLoadingComplete={() => setIsLoaded(true)}
+              fill
+              style={{ objectFit: 'cover' }}
+              className={`transition-opacity duration-500 ${isLoaded ? 'opacity-100' : 'opacity-0'} shadow-lg`}
+              onLoad={() => setIsLoaded(true)}
               priority
             />
-            {!isLoaded && (
-              <div className="absolute inset-0 flex items-center justify-center">
-                <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
-              </div>
-            )}
-          </div>
-        </main>
-
-        <section className="w-full max-w-5xl mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
-          {[
-            { icon: AzureCloudSvg, title: "Cloud-Consistent", description: "This 2022 GIF exemplifies Yahya's unwavering belief in achieving success through consistent effort as shown by the accompanying quote" },
-            { icon: AzureLightningSvg, title: "Lightning Fast", description: "Yahya proves that speed on the cloud is crucial; he achieved in two to three years what many think takes decades or even. more." },
-            { icon: AzureShieldSvg, title: "Secure & Reliable", description: "This highlights the power of making the right choices in life. Yahya fully trusts the cloud, believing it will save him—and it has." }
-          ].map((feature, index) => (
-            <motion.div 
-              key={index} 
-              className="bg-white bg-opacity-5 p-6 rounded-xl shadow-lg overflow-hidden backdrop-blur-sm"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              <feature.icon />
-              <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
-              <p className="text-blue-100">{feature.description}</p>
-            </motion.div>
-          ))}
-        </section>
-
-        <div className="w-full max-w-5xl mt-12 text-center">
-          <a href="https://az-dash.yahya-abulhaj.dev" target="_blank" rel="noopener noreferrer">
-            <motion.button
-              className="bg-[#50e6ff] text-[#003a6c] font-bold py-4 px-10 rounded-full shadow-lg hover:bg-white hover:text-[#0078D4] transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-            >
-              Singularize the Azure asset!
-            </motion.button>
           </a>
+          {!isLoaded && (
+            <div className="absolute inset-0 flex items-center justify-center">
+              <div className="animate-spin rounded-full h-32 w-32 border-t-2 border-b-2 border-white"></div>
+            </div>
+          )}
         </div>
+      </main>
 
-        <footer className="w-full max-w-5xl text-center mt-12 py-4 bg-white bg-opacity-5 rounded-xl backdrop-blur-sm">
-          <p className="text-sm sm:text-base text-white">© 2022 Yahya Cloud Ventures, Microsoft Azure Powered.</p>
-        </footer>
-      </motion.div>
-    </>
+      <section className="w-full max-w-5xl mt-12 grid grid-cols-1 sm:grid-cols-3 gap-6">
+        {[
+          { icon: AzureCloudSvg, title: "Cloud-Consistent", description: "This 2022 GIF exemplifies Yahya's unwavering belief in achieving success through consistent effort as shown by the accompanying quote" },
+          { icon: AzureLightningSvg, title: "Lightning Fast", description: "Yahya proves that speed on the cloud is crucial; he achieved in two to three years what many think takes decades or even. more." },
+          { icon: AzureShieldSvg, title: "Secure & Reliable", description: "This highlights the power of making the right choices in life. Yahya fully trusts the cloud, believing it will save him—and it has." }
+        ].map((feature, index) => (
+          <motion.div 
+            key={index} 
+            className="bg-white bg-opacity-5 p-6 rounded-xl shadow-lg overflow-hidden backdrop-blur-sm"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            <feature.icon />
+            <h3 className="text-xl font-semibold text-white mb-2">{feature.title}</h3>
+            <p className="text-blue-100">{feature.description}</p>
+          </motion.div>
+        ))}
+      </section>
+
+      <div className="w-full max-w-5xl mt-12 text-center">
+        <a href="https://az-dash.yahya-abulhaj.dev" target="_blank" rel="noopener noreferrer">
+          <motion.button
+            className="bg-[#50e6ff] text-[#003a6c] font-bold py-4 px-10 rounded-full shadow-lg hover:bg-white hover:text-[#0078D4] transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            Singularize the Azure asset!
+          </motion.button>
+        </a>
+      </div>
+
+      <footer className="w-full max-w-5xl text-center mt-12 py-4 bg-white bg-opacity-5 rounded-xl backdrop-blur-sm">
+        <p className="text-sm sm:text-base text-white">© 2022 Yahya Cloud Ventures, Microsoft Azure Powered.</p>
+      </footer>
+    </motion.div>
   )
 }
