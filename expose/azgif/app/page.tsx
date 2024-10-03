@@ -93,7 +93,7 @@ export default function Home() {
       </section>
 
       <div className="w-full max-w-5xl mt-12 text-center">
-        <a href="https://az-dash.yahya-abulhaj.dev" target="_blank" rel="noopener noreferrer">
+        <a href="dash"  rel="noopener noreferrer">
           <motion.button
             className="bg-[#50e6ff] text-[#003a6c] font-bold py-4 px-10 rounded-full shadow-lg hover:bg-white hover:text-[#0078D4] transition-all duration-300 transform hover:scale-105 focus:outline-none focus:ring-2 focus:ring-white focus:ring-opacity-50"
             whileHover={{ scale: 1.05 }}
