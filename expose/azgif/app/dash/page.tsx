@@ -11,7 +11,7 @@ const DashPage = () => {
   const assetPrefix = "https://raw.githubusercontent.com/yaya2devops/azdash/refs/heads/main/";
 
   useEffect(() => {
-    const link = document.querySelector("link[rel='icon']") || document.createElement('link');
+    const link = (document.querySelector("link[rel='icon']") || document.createElement('link')) as HTMLLinkElement;
     link.type = 'image/svg+xml';
     link.rel = 'icon';
     link.href = 'https://raw.githubusercontent.com/yaya2devops/azdash/refs/heads/main/expose/azgif/app/legend.svg';
