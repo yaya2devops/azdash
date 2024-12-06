@@ -94,10 +94,10 @@ function Header() {
     return () => window.removeEventListener('scroll', handleScroll)
   }, [])
 
-  const scrollTo = (id) => {
+  const scrollTo = (id: string) => {
     const element = document.getElementById(id)
     if (element) {
-      const offset = 80 // Header height + padding
+      const offset = 80
       const elementPosition = element.getBoundingClientRect().top
       const offsetPosition = elementPosition + window.pageYOffset - offset
       
@@ -107,7 +107,7 @@ function Header() {
       })
     }
     setIsOpen(false)
-  }
+}
 
   return (
     <motion.header 
