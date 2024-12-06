@@ -311,7 +311,7 @@ export default function Home() {
         </motion.div>
       </section>
 
-      {sections.map(({ id, title, icon: Icon, description }, index) => (
+      {sections.map(({ id, title, icon: Icon, description }) => (
         <section 
           key={id}
           id={id}

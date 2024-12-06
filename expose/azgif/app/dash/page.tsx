@@ -4,7 +4,7 @@ import React from 'react';
 import { motion } from 'framer-motion';
 import Image from 'next/image';
 import Link from 'next/link';
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import { ChevronLeft, ExternalLink } from 'lucide-react';
 
 const DashPage = () => {
@@ -81,9 +81,9 @@ const DashPage = () => {
             >
               <h3 className="text-xl font-bold mb-2 text-[#50e6ff]">Featured Motivational Quote</h3>
               <blockquote className="text-lg italic mb-4 text-blue-100">
-                "GET YOUR WORK ON!
-                When you live for a strong purpose, then hard work isn't an option. It's a necessity.
-                Plus, people might not get all they work for in this world, but they must certainly work for all they get."
+                &ldquo;GET YOUR WORK ON!
+                When you live for a strong purpose, then hard work isn&apos;t an option. It&apos;s a necessity.
+                Plus, people might not get all they work for in this world, but they must certainly work for all they get.&rdquo;
               </blockquote>
               <p className="text-sm text-blue-200 text-right">- Comes from Yahya Experience, Deep-Down.</p>
             </motion.div>
