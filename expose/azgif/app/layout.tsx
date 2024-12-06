@@ -7,6 +7,7 @@ const geistSans = localFont({
   variable: "--font-geist-sans",
   weight: "100 900",
 });
+
 const geistMono = localFont({
   src: "./fonts/GeistMonoVF.woff",
   variable: "--font-geist-mono",
@@ -14,8 +15,13 @@ const geistMono = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Azure Powered Yahya.",
+  title: "Azure, The Portal, Powered Yahya.",
   description: "Yahya was in Microsoft Azure",
+  icons: {
+    icon: '/legend.svg',
+    shortcut: '/legend.svg',
+    apple: '/legend.svg'
+  }
 };
 
 export default function RootLayout({
